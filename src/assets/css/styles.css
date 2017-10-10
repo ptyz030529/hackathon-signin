@@ -1,0 +1,62 @@
+:root{
+  --bodyBgColor : var(--colorGrey200);
+  --linkColor : var(--colorPromptText);
+}
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-size: calc(0.75em + 1vw);
+}
+body {
+  font-family: Roboto, Noto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bodyBgColor);
+  color: var(--colorText);
+  line-height: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+}
+a {
+  text-decoration: none;
+  color: var(--linkColor);
+}
+
+p {
+  margin: 0;
+}
+strong{
+  line-height: 1em;
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+/***********
+ * Layout
+ **********/
+ main {
+  flex: 1;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
